@@ -10,7 +10,7 @@ class MkrAiReady < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_darwin_amd64.tar.gz"
-      sha256 "bfe543fc9b1c3be40a3eb154c4690c124d2bb027f0eb10a430972e9164ce957f"
+      sha256 "4c96e1afdfb21b3b7e41a9dd15045feb74e5c7258f95835a6598436868487db6"
 
       define_method(:install) do
         bin.install "mkr-ai-ready"
@@ -18,7 +18,7 @@ class MkrAiReady < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_darwin_arm64.tar.gz"
-      sha256 "d892361efc3b6f2e709d6b0325f16be9c93b41daa8cc5e97663598df63832b54"
+      sha256 "24deaaf8c0931f5c32a975cea7ee29ea08ee22d58617915afa3cb420e26a127a"
 
       define_method(:install) do
         bin.install "mkr-ai-ready"
@@ -29,14 +29,14 @@ class MkrAiReady < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_linux_amd64.tar.gz"
-      sha256 "ad7f17111dcd4498f79ee7459e6008496f02fad920158d316f35c3c0e703f4c4"
+      sha256 "5e6be7bf03baea60021bc27d7cc9cac6a4a3d16b95ea1bf15bd7b25535854f25"
       define_method(:install) do
         bin.install "mkr-ai-ready"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_linux_arm64.tar.gz"
-      sha256 "6727389720d32d56ac2bc8a957e4b9c1a35d36be680ea126710272a2b5a85009"
+      sha256 "9711ce90e5d60b2e1ef39ed79a39bbd9bf6cbe708d592f91a4d97dd40bc8495a"
       define_method(:install) do
         bin.install "mkr-ai-ready"
       end
