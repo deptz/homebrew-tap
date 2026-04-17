@@ -5,20 +5,20 @@
 class MkrAiReady < Formula
   desc "Validate AI environment readiness across supported stacks"
   homepage "https://github.com/deptz/mkr-ai-ready-releases"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_darwin_amd64.tar.gz"
-      sha256 "4c96e1afdfb21b3b7e41a9dd15045feb74e5c7258f95835a6598436868487db6"
+      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.2/mkr-ai-ready_0.0.2_darwin_amd64.tar.gz"
+      sha256 "99425fd6e994f334995d31e202d8f11f71cc0e85b703b2e1791527896e681d05"
 
       define_method(:install) do
         bin.install "mkr-ai-ready"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_darwin_arm64.tar.gz"
-      sha256 "24deaaf8c0931f5c32a975cea7ee29ea08ee22d58617915afa3cb420e26a127a"
+      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.2/mkr-ai-ready_0.0.2_darwin_arm64.tar.gz"
+      sha256 "02ca3cd6b4da2485d2a5db87d7b710adaa156b7dd76192b57b200779beaee6dd"
 
       define_method(:install) do
         bin.install "mkr-ai-ready"
@@ -28,15 +28,15 @@ class MkrAiReady < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_linux_amd64.tar.gz"
-      sha256 "5e6be7bf03baea60021bc27d7cc9cac6a4a3d16b95ea1bf15bd7b25535854f25"
+      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.2/mkr-ai-ready_0.0.2_linux_amd64.tar.gz"
+      sha256 "ea7dffede74a0ac5b187518017049c74035e78fe39f77f069c35220a93850a36"
       define_method(:install) do
         bin.install "mkr-ai-ready"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.1/mkr-ai-ready_0.0.1_linux_arm64.tar.gz"
-      sha256 "9711ce90e5d60b2e1ef39ed79a39bbd9bf6cbe708d592f91a4d97dd40bc8495a"
+      url "https://github.com/deptz/mkr-ai-ready-releases/releases/download/v0.0.2/mkr-ai-ready_0.0.2_linux_arm64.tar.gz"
+      sha256 "1f22d688126a57f6c743c8d2482bd8d215c9215b994fb592dc503622617715e8"
       define_method(:install) do
         bin.install "mkr-ai-ready"
       end
