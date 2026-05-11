@@ -11,7 +11,7 @@ class Augflow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/deptz/augflow-releases/releases/download/v0.0.7/augflow_0.0.7_darwin_amd64.tar.gz"
-      sha256 "fcf799e02776ce52ecfd397c5dc81d1c3fc1051feb8c6c14f0f4fc3c5dc11d6d"
+      sha256 "4ac457ec69418b15e03e1d365dda44bf5c272bc3a7f1eb7c3ea1424d11728df2"
 
       define_method(:install) do
         bin.install "augflow"
@@ -22,7 +22,7 @@ class Augflow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/deptz/augflow-releases/releases/download/v0.0.7/augflow_0.0.7_darwin_arm64.tar.gz"
-      sha256 "d5bbc567d937bb70bc99f21d888c20527e9076cefeece109116b33cce42cadeb"
+      sha256 "b13a54e74fd2906780b0b35cbd9aba30405bb2cf4ad348bd4484543aadb512ca"
 
       define_method(:install) do
         bin.install "augflow"
@@ -36,7 +36,7 @@ class Augflow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/deptz/augflow-releases/releases/download/v0.0.7/augflow_0.0.7_linux_amd64.tar.gz"
-      sha256 "d7cee93cfd51c7c47f23b6cbf28f3ba9da82076d79802bfe88bf8a16d935299d"
+      sha256 "f7d8fe0b4dffb56554eae928daec44587d7cc48baa98289ea54873d3d49d51e8"
       define_method(:install) do
         bin.install "augflow"
         if File.directory?("web/dist")
@@ -46,7 +46,7 @@ class Augflow < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/deptz/augflow-releases/releases/download/v0.0.7/augflow_0.0.7_linux_arm64.tar.gz"
-      sha256 "3cec8829478c4d0f38a5ae7ef86638c5c9ef0a1a8aa740674088a3d7729b35b9"
+      sha256 "e3d80c88b7d0d37347756a2676ce8aa2c3f3fb7a5cbad8a4c6ffc9e7de981f1c"
       define_method(:install) do
         bin.install "augflow"
         if File.directory?("web/dist")
