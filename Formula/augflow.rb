@@ -5,13 +5,13 @@
 class Augflow < Formula
   desc "Local-first Developer Productivity Tool"
   homepage "https://github.com/deptz/augflow"
-  version "0.0.13"
+  version "0.0.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.13/augflow_0.0.13_darwin_amd64.tar.gz"
-      sha256 "b3c2f03be4eab3614fe5826a0fdb9467835b6ef3ef25333bd921f36f20e7533e"
+      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.14/augflow_0.0.14_darwin_amd64.tar.gz"
+      sha256 "aec7f2e19d9c7346d58282b944de47cdcd3fb5b4082a30a4a93c38c33987681d"
 
       define_method(:install) do
         bin.install "augflow"
@@ -21,8 +21,8 @@ class Augflow < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.13/augflow_0.0.13_darwin_arm64.tar.gz"
-      sha256 "45d054f50eb38125b26d4c0b45abf7e6ba1afb79857abce9f467208ffddb51dd"
+      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.14/augflow_0.0.14_darwin_arm64.tar.gz"
+      sha256 "d4c55692bdfe2208a824830ef895f8f269423a6551407dd8d84bfbb0961c978c"
 
       define_method(:install) do
         bin.install "augflow"
@@ -35,8 +35,8 @@ class Augflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.13/augflow_0.0.13_linux_amd64.tar.gz"
-      sha256 "bce805b76bfa8a1fb53a71d8cce299153191295ccaf0864c555b1ea808f550ad"
+      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.14/augflow_0.0.14_linux_amd64.tar.gz"
+      sha256 "7b8e779973afd57735a17a27ef6ec9d5bd433015d30137eaf49d9c1b5e606c52"
       define_method(:install) do
         bin.install "augflow"
         if File.directory?("web/dist")
@@ -45,8 +45,8 @@ class Augflow < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.13/augflow_0.0.13_linux_arm64.tar.gz"
-      sha256 "653b9951f29ec6f26d550ccb5e72696ef74450ab9c4c4dc69eb2304c7d3acfaa"
+      url "https://github.com/deptz/augflow-releases/releases/download/v0.0.14/augflow_0.0.14_linux_arm64.tar.gz"
+      sha256 "bf389edf4bac91e15804c14ab1ac147f366f5649aa5de353e7046cabb00265fc"
       define_method(:install) do
         bin.install "augflow"
         if File.directory?("web/dist")
